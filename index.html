@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	helloword
+<script src="jquery.min.js"></script>
+<script>
+    $.ajax({
+        url: 'http://localhost:9999',
+        type: 'post',
+        dataType: 'json',
+        data: {},
+        success: function (data) {
+            console.log(data);
+        },
+        error:function (e) {
+            console.log(e);
+        }
+    });
+</script>
+</body>
+</html>
